@@ -1,0 +1,4 @@
+%{
+  "jason": {:hex, :jason, "1.4.1", "af1504e35f629ddcdd6addb3513c3853991f694921b1b9368b0bd32beb9f1b63", [:mix], [{:decimal, "~> 1.0 or ~> 2.0", [hex: :decimal, repo: "hexpm", optional: true]}], "hexpm", "fbb01ecdfd565b56261302f7e1fcc27c4fb8f32d56eab74db621fc154604a7a1"},
+  "rabbitmq_stream": {:hex, :rabbitmq_stream, "0.4.1", "07213890ae8fb6f5cea5a37a604d335b8bb0a7c3499a8114e5149d13198be4d5", [:mix], [], "hexpm", "42a4b992614e3d1eb3a00b51a921d33637de3ab30b8e875ff386177ff97a1086"},
+}

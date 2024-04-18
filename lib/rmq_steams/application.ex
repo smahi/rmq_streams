@@ -10,9 +10,9 @@ defmodule RmqSteams.Application do
     children = [
       # Starts a worker by calling: RmqSteams.Worker.start_link(arg)
       # {RmqSteams.Worker, arg}
+      {DynamicSupervisor, name: RmqSteams.DynamicSupervisor, strategy: :one_for_one},
       RmqSteams.MyConnection,
-      RmqSteams.MyProducer,
-      RmqSteams.MyConsumer
+      RmqSteams.MyProducer
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

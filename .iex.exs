@@ -23,3 +23,9 @@ publish_20m = fn msg ->
     end
   end)
 end
+
+launch_consumers = fn number ->
+  for _n <- 1..number do
+    DynamicSupervisor.start_child(RmqSteams.DynamicSupervisor, {RmqSteams.MyConsumer, []})
+  end
+end
